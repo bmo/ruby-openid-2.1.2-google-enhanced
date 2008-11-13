@@ -1,0 +1,799 @@
+/!\ FAILSAFE /!\  Fri Nov 07 15:50:31 -0800 2008
+  Status: 500 Internal Server Error
+  A secret is required to generate an integrity hash for cookie session data. Use config.action_controller.session = { :session_key => "_myapp_session", :secret => "some secret phrase of at least 30 characters" } in config/environment.rb
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session/cookie_store.rb:90:in `ensure_secret_secure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session/cookie_store.rb:59:in `initialize'
+    /opt/local/lib/ruby/1.8/cgi/session.rb:273:in `new'
+    /opt/local/lib/ruby/1.8/cgi/session.rb:273:in `initialize_without_cgi_reader'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/cgi_ext/session.rb:39:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/cgi_process.rb:132:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/cgi_process.rb:132:in `session'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/cgi_process.rb:116:in `session'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:523:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-07 15:51:22) [GET]
+  Session ID: 3e238a0eab229a30e8c3df0798c62ce4
+  Parameters: {"action"=>"index", "controller"=>"login"}
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-07 15:51:22) [GET]
+  Session ID: 3e238a0eab229a30e8c3df0798c62ce4
+  Parameters: {"action"=>"index", "controller"=>"login"}
+
+
+MissingSourceFile (no such file to load -- sqlite3):
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `connection='
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:260:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.000233)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000332)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.073436)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.063053)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.000467)[0m   [0;1mSHOW TABLES[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-07 15:53:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mSQL (0.000247)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/server
+Rendering login/index
+Completed in 0.00753 (132 reqs/sec) | Rendering: 0.00531 (70%) | DB: 0.00025 (3%) | 200 OK [http://127.0.0.1/]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-07 15:53:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00608 (164 reqs/sec) | Rendering: 0.00374 (61%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/consumer]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-07 15:54:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {"action"=>"start", "controller"=>"consumer", "openid_identifier"=>"https://me.yahoo.com/bmoran_onehub"}
+Redirected to https://open.login.yahooapis.com/openid/op/auth?openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.claimed_id=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&openid.identity=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete
+Completed in 1.07994 (0 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/start?openid_identifier=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub]
+
+
+Processing ConsumerController#complete (for 127.0.0.1 at 2008-11-07 15:54:17) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnRvOiJPcGVuSUQ6Ok9wZW5JRFNlcnZpY2VFbmRwb2ludAw6DkBsb2NhbF9p
+ZDA6GEBkaXNwbGF5X2lkZW50aWZpZXIwOg9AdHlwZV91cmlzWwciLGh0dHA6
+Ly9zcGVjcy5vcGVuaWQubmV0L2F1dGgvMi4wL3NpZ25vbiIwaHR0cDovL3Nw
+ZWNzLm9wZW5pZC5uZXQvZXh0ZW5zaW9ucy9wYXBlLzEuMDoQQHVzZWRfeWFk
+aXNUOhBAc2VydmVyX3VybCI0aHR0cHM6Ly9vcGVuLmxvZ2luLnlhaG9vYXBp
+cy5jb20vb3BlbmlkL29wL2F1dGg6EkBjYW5vbmljYWxfaWQwOhBAY2xhaW1l
+ZF9pZCInaHR0cHM6Ly9tZS55YWhvby5jb20vYm1vcmFuX29uZWh1YiIKZmxh
+c2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoK
+QHVzZWR7ACI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2Vz
+OjpPcGVuSUQ6OkNvbnN1bWVyOjpvOilPcGVuSUQ6OkNvbnN1bWVyOjpEaXNj
+b3ZlcmVkU2VydmljZXMJOg9AeWFkaXNfdXJsIidodHRwczovL21lLnlhaG9v
+LmNvbS9ibW9yYW5fb25laHViOg1AY3VycmVudEAHOg5Ac2VydmljZXNbADoS
+QHN0YXJ0aW5nX3VybCInaHR0cHM6Ly9tZS55YWhvby5jb20vYm1vcmFuX29u
+ZWh1Yg==--d60ec707886772ada8980ff85337cf3d4633d1e8
+  Parameters: {"openid.sig"=>"zYp9KkxkoTIJjiORMvuefEebliM=", "openid.claimed_id"=>"https://me.yahoo.com/bmoran_onehub#01975", "openid.return_to"=>"http://127.0.0.1:3000/consumer/complete", "openid.mode"=>"id_res", "openid.op_endpoint"=>"https://open.login.yahooapis.com/openid/op/auth", "openid.ns"=>"http://specs.openid.net/auth/2.0", "openid.response_nonce"=>"2008-11-07T23:54:16Z6sX9uxOueDPhIc1YH0CPe9vN.VrA_EEILw--", "action"=>"complete", "openid.pape.nist_auth_level"=>"0", "controller"=>"consumer", "openid.identity"=>"https://me.yahoo.com/bmoran_onehub", "openid.pape.auth_policies"=>"none", "openid.signed"=>"assoc_handle,claimed_id,identity,mode,ns,ns.pape,op_endpoint,pape.auth_policies,pape.nist_auth_level,response_nonce,return_to,signed", "openid.assoc_handle"=>"S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--", "openid.ns.pape"=>"http://specs.openid.net/extensions/pape/1.0", "openid.realm"=>"http://127.0.0.1:3000/consumer"}
+Redirected to http://127.0.0.1:3000/consumer
+Completed in 0.00852 (117 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/complete?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete&openid.claimed_id=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub%2301975&openid.identity=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.response_nonce=2008-11-07T23%3A54%3A16Z6sX9uxOueDPhIc1YH0CPe9vN.VrA_EEILw--&openid.signed=assoc_handle%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cns.pape%2Cop_endpoint%2Cpape.auth_policies%2Cpape.nist_auth_level%2Cresponse_nonce%2Creturn_to%2Csigned&openid.op_endpoint=https%3A%2F%2Fopen.login.yahooapis.com%2Fopenid%2Fop%2Fauth&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.auth_policies=none&openid.pape.nist_auth_level=0&openid.sig=zYp9KkxkoTIJjiORMvuefEebliM%3D]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-07 15:54:17) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgxzdWNjZXNzIkJWZXJpZmljYXRpb24gb2YgaHR0cHM6Ly9tZS55
+YWhvby5jb20vYm1vcmFuX29uZWh1YiBzdWNjZWVkZWQuBjoKQHVzZWR7BjsG
+RiIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9pbnQw
+Ij1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVkU2VydmljZXM6Ok9wZW5J
+RDo6Q29uc3VtZXI6OjA=--657a6a7379f2723bebfeeae2c4e23fd2050adc3b
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00202 (496 reqs/sec) | Rendering: 0.00051 (25%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/consumer]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-07 15:54:42) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hI
+YXNoewY6DHN1Y2Nlc3MiQlZlcmlmaWNhdGlvbiBvZiBodHRwczovL21lLnlh
+aG9vLmNvbS9ibW9yYW5fb25laHViIHN1Y2NlZWRlZC4GOgpAdXNlZHsGOwZU
+Ij1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVkU2VydmljZXM6Ok9wZW5J
+RDo6Q29uc3VtZXI6OjA=--3ea182089e9d747bf3695a08ded722cb3d3383c0
+  Parameters: {"action"=>"start", "controller"=>"consumer", "use_sreg"=>"on", "openid_identifier"=>"https://me.yahoo.com/bmoran_onehub", "use_pape"=>"on"}
+Redirected to https://open.login.yahooapis.com/openid/op/auth?openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.claimed_id=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&openid.identity=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.pape.max_auth_age=7200&openid.pape.preferred_auth_policies=http%3A%2F%2Fschemas.openid.net%2Fpape%2Fpolicies%2F2007%2F06%2Fphishing-resistant&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete%3Fdid_pape%3Dy%26did_sreg%3Dy&openid.sreg.optional=dob%2Cfullname&openid.sreg.required=email%2Cnickname
+Completed in 0.20587 (4 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/start?openid_identifier=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&use_sreg=on&use_pape=on]
+
+
+Processing ConsumerController#complete (for 127.0.0.1 at 2008-11-07 15:54:46) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ACIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1
+ZXN0ZWRfZW5kcG9pbnRvOiJPcGVuSUQ6Ok9wZW5JRFNlcnZpY2VFbmRwb2lu
+dAw6DkBsb2NhbF9pZDA6GEBkaXNwbGF5X2lkZW50aWZpZXIwOg9AdHlwZV91
+cmlzWwciLGh0dHA6Ly9zcGVjcy5vcGVuaWQubmV0L2F1dGgvMi4wL3NpZ25v
+biIwaHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvZXh0ZW5zaW9ucy9wYXBlLzEu
+MDoQQHVzZWRfeWFkaXNUOhBAc2VydmVyX3VybCI0aHR0cHM6Ly9vcGVuLmxv
+Z2luLnlhaG9vYXBpcy5jb20vb3BlbmlkL29wL2F1dGg6EkBjYW5vbmljYWxf
+aWQwOhBAY2xhaW1lZF9pZCInaHR0cHM6Ly9tZS55YWhvby5jb20vYm1vcmFu
+X29uZWh1YiI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2Vz
+OjpPcGVuSUQ6OkNvbnN1bWVyOjpvOilPcGVuSUQ6OkNvbnN1bWVyOjpEaXNj
+b3ZlcmVkU2VydmljZXMJOg9AeWFkaXNfdXJsIidodHRwczovL21lLnlhaG9v
+LmNvbS9ibW9yYW5fb25laHViOg1AY3VycmVudEAKOg5Ac2VydmljZXNbADoS
+QHN0YXJ0aW5nX3VybCInaHR0cHM6Ly9tZS55YWhvby5jb20vYm1vcmFuX29u
+ZWh1Yg==--9e30c0d4b1c49758ed087761dfc5f5b80caae7fa
+  Parameters: {"openid.sig"=>"WAtqJJnVQc/l0IkwgXDdiAPbKGs=", "openid.claimed_id"=>"https://me.yahoo.com/bmoran_onehub#01975", "openid.return_to"=>"http://127.0.0.1:3000/consumer/complete?did_pape=y&did_sreg=y", "openid.mode"=>"id_res", "openid.op_endpoint"=>"https://open.login.yahooapis.com/openid/op/auth", "openid.ns"=>"http://specs.openid.net/auth/2.0", "openid.response_nonce"=>"2008-11-07T23:54:45ZdaxQDc5NctDBiitv3xaMoMdtqD.haGE.jw--", "action"=>"complete", "did_sreg"=>"y", "openid.pape.nist_auth_level"=>"0", "controller"=>"consumer", "openid.identity"=>"https://me.yahoo.com/bmoran_onehub", "openid.pape.auth_policies"=>"none", "openid.signed"=>"assoc_handle,claimed_id,identity,mode,ns,ns.pape,op_endpoint,pape.auth_policies,pape.nist_auth_level,response_nonce,return_to,signed", "openid.assoc_handle"=>"S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--", "openid.ns.pape"=>"http://specs.openid.net/extensions/pape/1.0", "openid.realm"=>"http://127.0.0.1:3000/consumer", "did_pape"=>"y"}
+Redirected to http://127.0.0.1:3000/consumer
+Completed in 0.00555 (180 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/complete?did_pape=y&did_sreg=y&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete%3Fdid_pape%3Dy%26did_sreg%3Dy&openid.claimed_id=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub%2301975&openid.identity=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.response_nonce=2008-11-07T23%3A54%3A45ZdaxQDc5NctDBiitv3xaMoMdtqD.haGE.jw--&openid.signed=assoc_handle%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cns.pape%2Cop_endpoint%2Cpape.auth_policies%2Cpape.nist_auth_level%2Cresponse_nonce%2Creturn_to%2Csigned&openid.op_endpoint=https%3A%2F%2Fopen.login.yahooapis.com%2Fopenid%2Fop%2Fauth&openid.pape.auth_policies=none&openid.pape.nist_auth_level=0&openid.sig=WAtqJJnVQc%2Fl0IkwgXDdiAPbKGs%3D]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-07 15:54:46) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hI
+YXNoewg6EXBhcGVfcmVzdWx0cyJ+QSBwaGlzaGluZyByZXNpc3RhbnQgYXV0
+aGVudGljYXRpb24gbWV0aG9kIHdhcyByZXF1ZXN0ZWQsIGJ1dCB0aGUgc2Vy
+dmVyIGRpZCBub3QgcmVwb3J0IG9uZS48YnI+PGI+TklTVCBBdXRoIExldmVs
+OjwvYj4gMDoRc3JlZ19yZXN1bHRzIkNTaW1wbGUgUmVnaXN0cmF0aW9uIGRh
+dGEgd2FzIHJlcXVlc3RlZCwgYnV0IG5vbmUgd2FzIHJldHVybmVkLjoMc3Vj
+Y2VzcyJCVmVyaWZpY2F0aW9uIG9mIGh0dHBzOi8vbWUueWFob28uY29tL2Jt
+b3Jhbl9vbmVodWIgc3VjY2VlZGVkLgY6CkB1c2Vkewg7BkY7B0Y7CEYiPU9w
+ZW5JRDo6Q29uc3VtZXI6OkRpc2NvdmVyZWRTZXJ2aWNlczo6T3BlbklEOjpD
+b25zdW1lcjo6MA==--578392ad60e82f6f0e77734e3df4dd4987b6d3c8
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00203 (492 reqs/sec) | Rendering: 0.00056 (27%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/consumer]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-07 16:36:19) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsIOhFwYXBlX3Jlc3VsdHMifkEgcGhpc2hpbmcgcmVzaXN0YW50IGF1
+dGhlbnRpY2F0aW9uIG1ldGhvZCB3YXMgcmVxdWVzdGVkLCBidXQgdGhlIHNl
+cnZlciBkaWQgbm90IHJlcG9ydCBvbmUuPGJyPjxiPk5JU1QgQXV0aCBMZXZl
+bDo8L2I+IDA6DHN1Y2Nlc3MiQlZlcmlmaWNhdGlvbiBvZiBodHRwczovL21l
+LnlhaG9vLmNvbS9ibW9yYW5fb25laHViIHN1Y2NlZWRlZC46EXNyZWdfcmVz
+dWx0cyJDU2ltcGxlIFJlZ2lzdHJhdGlvbiBkYXRhIHdhcyByZXF1ZXN0ZWQs
+IGJ1dCBub25lIHdhcyByZXR1cm5lZC4GOgpAdXNlZHsIOwZUOwdUOwhUIi5P
+cGVuSUQ6OkNvbnN1bWVyOjpsYXN0X3JlcXVlc3RlZF9lbmRwb2ludDAiPU9w
+ZW5JRDo6Q29uc3VtZXI6OkRpc2NvdmVyZWRTZXJ2aWNlczo6T3BlbklEOjpD
+b25zdW1lcjo6MA==--abb0f8b6500b8b173c622cd12669228acaa3761e
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mSQL (0.000265)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/server
+Rendering login/index
+Completed in 0.00728 (137 reqs/sec) | Rendering: 0.00477 (65%) | DB: 0.00027 (3%) | 200 OK [http://127.0.0.1/]
+
+
+Processing LoginController#submit (for 127.0.0.1 at 2008-11-07 16:36:25) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hI
+YXNoewAGOgpAdXNlZHsAIj1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVk
+U2VydmljZXM6Ok9wZW5JRDo6Q29uc3VtZXI6OjA=--0d21fcaa65983c867a2d039a63f883c9ba8d93c9
+  Parameters: {"username"=>"yahoo.com", "action"=>"submit", "controller"=>"login"}
+Redirected to http://127.0.0.1:3000/
+Completed in 0.00217 (459 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/login/submit?username=yahoo.com]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-07 16:36:25) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiCmZsYXNo
+SUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90
+aWNlImVZb3VyIE9wZW5JRCBVUkwgaXMgPGI+aHR0cDovLzEyNy4wLjAuMToz
+MDAwL3VzZXIveWFob28uY29tPC9iPjxici8+PGJyLz5Qcm9jZWVkIHRvIHN0
+ZXAgMiBiZWxvdy4GOgpAdXNlZHsGOwhGIi5PcGVuSUQ6OkNvbnN1bWVyOjps
+YXN0X3JlcXVlc3RlZF9lbmRwb2ludDAiPU9wZW5JRDo6Q29uc3VtZXI6OkRp
+c2NvdmVyZWRTZXJ2aWNlczo6T3BlbklEOjpDb25zdW1lcjo6MA==--fbcfc55911fed3252e820903e75a3ad93e570b71
+  Parameters: {"action"=>"index", "controller"=>"login"}
+Rendering template within layouts/server
+Rendering login/index
+Completed in 0.00244 (409 reqs/sec) | Rendering: 0.00073 (29%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-07 16:36:33) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiLk9wZW5J
+RDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBvaW50MCIKZmxhc2hJ
+QzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3Rp
+Y2UiZVlvdXIgT3BlbklEIFVSTCBpcyA8Yj5odHRwOi8vMTI3LjAuMC4xOjMw
+MDAvdXNlci95YWhvby5jb208L2I+PGJyLz48YnIvPlByb2NlZWQgdG8gc3Rl
+cCAyIGJlbG93LgY6CkB1c2VkewY7CFQiPU9wZW5JRDo6Q29uc3VtZXI6OkRp
+c2NvdmVyZWRTZXJ2aWNlczo6T3BlbklEOjpDb25zdW1lcjo6MA==--f1f2aae4a612eb92985657ef97f84cb957323540
+  Parameters: {"action"=>"index", "controller"=>"login"}
+Rendering template within layouts/server
+Rendering login/index
+Completed in 0.00252 (397 reqs/sec) | Rendering: 0.00074 (29%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/login]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-07 16:36:36) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiCmZsYXNo
+SUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1
+c2VkewAiLk9wZW5JRDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBv
+aW50MCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjow--a1d91bb0a9fc45cba820e00418942b1bffc7c461
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00476 (210 reqs/sec) | Rendering: 0.00301 (63%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/consumer]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-07 16:36:41) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiLk9wZW5J
+RDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBvaW50MCIKZmxhc2hJ
+QzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVz
+ZWR7ACI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2VzOjpP
+cGVuSUQ6OkNvbnN1bWVyOjow--036440b42a0f96482b26e45e8f17fc666a661d87
+  Parameters: {"action"=>"start", "controller"=>"consumer", "openid_identifier"=>"yahoo.com"}
+Redirected to https://open.login.yahooapis.com/openid/op/auth?openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete
+Completed in 0.91037 (1 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/start?openid_identifier=yahoo.com]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-07 16:37:10) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiCmZsYXNo
+SUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1
+c2VkewAiLk9wZW5JRDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBv
+aW50bzoiT3BlbklEOjpPcGVuSURTZXJ2aWNlRW5kcG9pbnQMOg5AbG9jYWxf
+aWQwOhhAZGlzcGxheV9pZGVudGlmaWVyMDoPQHR5cGVfdXJpc1sHIixodHRw
+Oi8vc3BlY3Mub3BlbmlkLm5ldC9hdXRoLzIuMC9zZXJ2ZXIiMGh0dHA6Ly9z
+cGVjcy5vcGVuaWQubmV0L2V4dGVuc2lvbnMvcGFwZS8xLjA6EEB1c2VkX3lh
+ZGlzVDoQQHNlcnZlcl91cmwiNGh0dHBzOi8vb3Blbi5sb2dpbi55YWhvb2Fw
+aXMuY29tL29wZW5pZC9vcC9hdXRoOhJAY2Fub25pY2FsX2lkMDoQQGNsYWlt
+ZWRfaWQwIj1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVkU2VydmljZXM6
+Ok9wZW5JRDo6Q29uc3VtZXI6Om86KU9wZW5JRDo6Q29uc3VtZXI6OkRpc2Nv
+dmVyZWRTZXJ2aWNlcwk6D0B5YWRpc191cmwiGmh0dHA6Ly93d3cueWFob28u
+Y29tLzoNQGN1cnJlbnRADDoOQHNlcnZpY2VzWwA6EkBzdGFydGluZ191cmwi
+DnlhaG9vLmNvbQ==--dcb415afec56aaeb7fee4a81cbf0384923457dc3
+  Parameters: {"action"=>"start", "controller"=>"consumer", "use_sreg"=>"on", "openid_identifier"=>"yahoo.com", "immediate"=>"on"}
+Redirected to https://open.login.yahooapis.com/openid/op/auth?openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_immediate&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete%3Fdid_sreg%3Dy&openid.sreg.optional=dob%2Cfullname&openid.sreg.required=email%2Cnickname
+Completed in 0.21105 (4 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/start?openid_identifier=yahoo.com&immediate=on&use_sreg=on]
+
+
+Processing ConsumerController#complete (for 127.0.0.1 at 2008-11-07 16:37:11) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiLk9wZW5J
+RDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBvaW50bzoiT3BlbklE
+OjpPcGVuSURTZXJ2aWNlRW5kcG9pbnQMOg5AbG9jYWxfaWQwOhhAZGlzcGxh
+eV9pZGVudGlmaWVyMDoPQHR5cGVfdXJpc1sHIixodHRwOi8vc3BlY3Mub3Bl
+bmlkLm5ldC9hdXRoLzIuMC9zZXJ2ZXIiMGh0dHA6Ly9zcGVjcy5vcGVuaWQu
+bmV0L2V4dGVuc2lvbnMvcGFwZS8xLjA6EEB1c2VkX3lhZGlzVDoQQHNlcnZl
+cl91cmwiNGh0dHBzOi8vb3Blbi5sb2dpbi55YWhvb2FwaXMuY29tL29wZW5p
+ZC9vcC9hdXRoOhJAY2Fub25pY2FsX2lkMDoQQGNsYWltZWRfaWQwIgpmbGFz
+aElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpA
+dXNlZHsAIj1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVkU2VydmljZXM6
+Ok9wZW5JRDo6Q29uc3VtZXI6Om86KU9wZW5JRDo6Q29uc3VtZXI6OkRpc2Nv
+dmVyZWRTZXJ2aWNlcwk6D0B5YWRpc191cmwiGmh0dHA6Ly93d3cueWFob28u
+Y29tLzoNQGN1cnJlbnRACToOQHNlcnZpY2VzWwA6EkBzdGFydGluZ191cmwi
+DnlhaG9vLmNvbQ==--dceffc6b5579e0a0e9c2ae0b696e0eb432ebe84c
+  Parameters: {"openid.mode"=>"setup_needed", "openid.user_setup_url"=>"https://open.login.yahooapis.com/openid/op/auth?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete%3Fdid_sreg%3Dy&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.ns.pape=", "openid.ns"=>"http://specs.openid.net/auth/2.0", "action"=>"complete", "did_sreg"=>"y", "controller"=>"consumer"}
+Redirected to http://127.0.0.1:3000/consumer
+Completed in 0.00279 (358 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/complete?did_sreg=y&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=setup_needed&openid.user_setup_url=https%3A%2F%2Fopen.login.yahooapis.com%2Fopenid%2Fop%2Fauth%3Fopenid.ns%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%26openid.mode%3Dcheckid_setup%26openid.return_to%3Dhttp%253A%252F%252F127.0.0.1%253A3000%252Fconsumer%252Fcomplete%253Fdid_sreg%253Dy%26openid.claimed_id%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.identity%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.assoc_handle%3DS7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--%26openid.realm%3Dhttp%253A%252F%252F127.0.0.1%253A3000%252Fconsumer%26openid.ns.pape%3D]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-07 16:37:11) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiCmZsYXNo
+SUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoKYWxl
+cnQiLEltbWVkaWF0ZSByZXF1ZXN0IGZhaWxlZCAtIFNldHVwIE5lZWRlZAY6
+CkB1c2VkewY7CEYiLk9wZW5JRDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVk
+X2VuZHBvaW50MCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZp
+Y2VzOjpPcGVuSUQ6OkNvbnN1bWVyOjpvOilPcGVuSUQ6OkNvbnN1bWVyOjpE
+aXNjb3ZlcmVkU2VydmljZXMJOg9AeWFkaXNfdXJsIhpodHRwOi8vd3d3Lnlh
+aG9vLmNvbS86DUBjdXJyZW50bzoiT3BlbklEOjpPcGVuSURTZXJ2aWNlRW5k
+cG9pbnQMOg5AbG9jYWxfaWQwOhhAZGlzcGxheV9pZGVudGlmaWVyMDoPQHR5
+cGVfdXJpc1sHIixodHRwOi8vc3BlY3Mub3BlbmlkLm5ldC9hdXRoLzIuMC9z
+ZXJ2ZXIiMGh0dHA6Ly9zcGVjcy5vcGVuaWQubmV0L2V4dGVuc2lvbnMvcGFw
+ZS8xLjA6EEB1c2VkX3lhZGlzVDoQQHNlcnZlcl91cmwiNGh0dHBzOi8vb3Bl
+bi5sb2dpbi55YWhvb2FwaXMuY29tL29wZW5pZC9vcC9hdXRoOhJAY2Fub25p
+Y2FsX2lkMDoQQGNsYWltZWRfaWQwOg5Ac2VydmljZXNbADoSQHN0YXJ0aW5n
+X3VybCIOeWFob28uY29t--6640b7e12a57ec96dd3a6d02c48cbdb5ddff7527
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00259 (385 reqs/sec) | Rendering: 0.00062 (23%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/consumer]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-07 16:37:19) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiLk9wZW5J
+RDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBvaW50MCIKZmxhc2hJ
+QzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgphbGVy
+dCIsSW1tZWRpYXRlIHJlcXVlc3QgZmFpbGVkIC0gU2V0dXAgTmVlZGVkBjoK
+QHVzZWR7BjsIVCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZp
+Y2VzOjpPcGVuSUQ6OkNvbnN1bWVyOjpvOilPcGVuSUQ6OkNvbnN1bWVyOjpE
+aXNjb3ZlcmVkU2VydmljZXMJOg9AeWFkaXNfdXJsIhpodHRwOi8vd3d3Lnlh
+aG9vLmNvbS86DUBjdXJyZW50bzoiT3BlbklEOjpPcGVuSURTZXJ2aWNlRW5k
+cG9pbnQMOg5AbG9jYWxfaWQwOhhAZGlzcGxheV9pZGVudGlmaWVyMDoPQHR5
+cGVfdXJpc1sHIixodHRwOi8vc3BlY3Mub3BlbmlkLm5ldC9hdXRoLzIuMC9z
+ZXJ2ZXIiMGh0dHA6Ly9zcGVjcy5vcGVuaWQubmV0L2V4dGVuc2lvbnMvcGFw
+ZS8xLjA6EEB1c2VkX3lhZGlzVDoQQHNlcnZlcl91cmwiNGh0dHBzOi8vb3Bl
+bi5sb2dpbi55YWhvb2FwaXMuY29tL29wZW5pZC9vcC9hdXRoOhJAY2Fub25p
+Y2FsX2lkMDoQQGNsYWltZWRfaWQwOg5Ac2VydmljZXNbADoSQHN0YXJ0aW5n
+X3VybCIOeWFob28uY29t--703a373d2b4d694a851cf6a42f9014119a1d04a0
+  Parameters: {"action"=>"start", "controller"=>"consumer", "use_sreg"=>"on", "openid_identifier"=>"yahoo.com", "force_post"=>"on"}
+Completed in 0.26323 (3 reqs/sec) | Rendering: 0.00024 (0%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/consumer/start?openid_identifier=yahoo.com&use_sreg=on&force_post=on]
+
+
+Processing ConsumerController#complete (for 127.0.0.1 at 2008-11-07 16:37:25) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiCmZsYXNo
+SUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1
+c2VkewAiLk9wZW5JRDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBv
+aW50bzoiT3BlbklEOjpPcGVuSURTZXJ2aWNlRW5kcG9pbnQMOg5AbG9jYWxf
+aWQwOhhAZGlzcGxheV9pZGVudGlmaWVyMDoPQHR5cGVfdXJpc1sHIixodHRw
+Oi8vc3BlY3Mub3BlbmlkLm5ldC9hdXRoLzIuMC9zZXJ2ZXIiMGh0dHA6Ly9z
+cGVjcy5vcGVuaWQubmV0L2V4dGVuc2lvbnMvcGFwZS8xLjA6EEB1c2VkX3lh
+ZGlzVDoQQHNlcnZlcl91cmwiNGh0dHBzOi8vb3Blbi5sb2dpbi55YWhvb2Fw
+aXMuY29tL29wZW5pZC9vcC9hdXRoOhJAY2Fub25pY2FsX2lkMDoQQGNsYWlt
+ZWRfaWQwIj1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVkU2VydmljZXM6
+Ok9wZW5JRDo6Q29uc3VtZXI6Om86KU9wZW5JRDo6Q29uc3VtZXI6OkRpc2Nv
+dmVyZWRTZXJ2aWNlcwk6D0B5YWRpc191cmwiGmh0dHA6Ly93d3cueWFob28u
+Y29tLzoNQGN1cnJlbnRADDoOQHNlcnZpY2VzWwA6EkBzdGFydGluZ191cmwi
+DnlhaG9vLmNvbQ==--dcb415afec56aaeb7fee4a81cbf0384923457dc3
+  Parameters: {"openid.sig"=>"66MNTHmBQ7lyVOfvmYJ+cvJXTP0=", "openid.claimed_id"=>"https://me.yahoo.com/bmoran_onehub#01975", "openid.return_to"=>"http://127.0.0.1:3000/consumer/complete?did_sreg=y&force_post=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "openid.mode"=>"id_res", "openid.op_endpoint"=>"https://open.login.yahooapis.com/openid/op/auth", "openid.ns"=>"http://specs.openid.net/auth/2.0", "openid.response_nonce"=>"2008-11-08T00:37:25ZlwAfMiKgoiMWfaTnOf_6fWk9r_kABw6llA--", "action"=>"complete", "did_sreg"=>"y", "openid.pape.nist_auth_level"=>"0", "controller"=>"consumer", "openid.identity"=>"https://me.yahoo.com/bmoran_onehub", "openid.pape.auth_policies"=>"none", "openid.signed"=>"assoc_handle,claimed_id,identity,mode,ns,ns.pape,op_endpoint,pape.auth_policies,pape.nist_auth_level,response_nonce,return_to,signed", "openid.assoc_handle"=>"S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--", "force_post"=>"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "openid.ns.pape"=>"http://specs.openid.net/extensions/pape/1.0", "openid.realm"=>"http://127.0.0.1:3000/consumer"}
+Redirected to http://127.0.0.1:3000/consumer
+Completed in 0.36639 (2 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/consumer/complete?did_sreg=y&force_post=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.return_to=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer%2Fcomplete%3Fdid_sreg%3Dy%26force_post%3Dxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&openid.claimed_id=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub%2301975&openid.identity=https%3A%2F%2Fme.yahoo.com%2Fbmoran_onehub&openid.assoc_handle=S7lnwyBc0LyzZtKMmgy8Qhg5lDUB4zcrmd09htNzIRuAt00wRmb0gRXfef2nRpXl6c98R_GcG7SXX.RNmXMAuYUCVh1RRvKLXPNNj20J_nh01xNPnY5PWkzguHiQkw--&openid.realm=http%3A%2F%2F127.0.0.1%3A3000%2Fconsumer&openid.response_nonce=2008-11-08T00%3A37%3A25ZlwAfMiKgoiMWfaTnOf_6fWk9r_kABw6llA--&openid.signed=assoc_handle%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cns.pape%2Cop_endpoint%2Cpape.auth_policies%2Cpape.nist_auth_level%2Cresponse_nonce%2Creturn_to%2Csigned&openid.op_endpoint=https%3A%2F%2Fopen.login.yahooapis.com%2Fopenid%2Fop%2Fauth&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.auth_policies=none&openid.pape.nist_auth_level=0&openid.sig=66MNTHmBQ7lyVOfvmYJ%2BcvJXTP0%3D]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-07 16:37:26) [GET]
+  Session ID: BAh7CjoNdXNlcm5hbWUiDnlhaG9vLmNvbToOYXBwcm92YWxzWwAiLk9wZW5J
+RDo6Q29uc3VtZXI6Omxhc3RfcmVxdWVzdGVkX2VuZHBvaW50MCIKZmxhc2hJ
+QzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsHOhFzcmVn
+X3Jlc3VsdHMiQ1NpbXBsZSBSZWdpc3RyYXRpb24gZGF0YSB3YXMgcmVxdWVz
+dGVkLCBidXQgbm9uZSB3YXMgcmV0dXJuZWQuOgxzdWNjZXNzIkJWZXJpZmlj
+YXRpb24gb2YgaHR0cHM6Ly9tZS55YWhvby5jb20vYm1vcmFuX29uZWh1YiBz
+dWNjZWVkZWQuBjoKQHVzZWR7BzsIRjsJRiI9T3BlbklEOjpDb25zdW1lcjo6
+RGlzY292ZXJlZFNlcnZpY2VzOjpPcGVuSUQ6OkNvbnN1bWVyOjow--594aa03c07291bc827d8e2e893f607e30fb5e328
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00201 (498 reqs/sec) | Rendering: 0.00053 (26%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/consumer]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-12 16:55:39) [GET]
+  Session ID: e39184c8cd2cd7ccb5dd2b9cfbe26078
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mSQL (0.000444)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/server
+Rendering login/index
+Completed in 0.01452 (68 reqs/sec) | Rendering: 0.01053 (72%) | DB: 0.00044 (3%) | 200 OK [http://www.example.com/]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-12 16:55:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00560 (178 reqs/sec) | Rendering: 0.00347 (61%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/consumer]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-12 16:56:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/auth/openid_consumer" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-12 16:56:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/auth/openid_consumer" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-11-12 16:57:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {"action"=>"index", "controller"=>"login"}
+Rendering template within layouts/server
+Rendering login/index
+Completed in 0.00280 (356 reqs/sec) | Rendering: 0.00081 (28%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-12 16:57:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00210 (475 reqs/sec) | Rendering: 0.00049 (23%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/consumer]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-12 16:57:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--ab3779f6114bcd960a6cccf45c08e39621510016
+  Parameters: {"google_email_extension"=>"on", "action"=>"start", "controller"=>"consumer", "openid_identifier"=>"https://www.google.com/accounts/o8/id"}
+
+
+NameError (uninitialized constant OpenID::AX):
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:275:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:467:in `const_missing'
+    /app/controllers/consumer_controller.rb:46:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-12 16:58:58) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnRvOiJPcGVuSUQ6Ok9wZW5JRFNlcnZpY2VFbmRwb2ludAw6DkBsb2NhbF9p
+ZDA6GEBkaXNwbGF5X2lkZW50aWZpZXIwOg9AdHlwZV91cmlzWwYiLGh0dHA6
+Ly9zcGVjcy5vcGVuaWQubmV0L2F1dGgvMi4wL3NlcnZlcjoQQHVzZWRfeWFk
+aXNUOhBAc2VydmVyX3VybCIqaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hY2Nv
+dW50cy9vOC91ZDoSQGNhbm9uaWNhbF9pZDA6EEBjbGFpbWVkX2lkMCIKZmxh
+c2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoK
+QHVzZWR7ACI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2Vz
+OjpPcGVuSUQ6OkNvbnN1bWVyOjpvOilPcGVuSUQ6OkNvbnN1bWVyOjpEaXNj
+b3ZlcmVkU2VydmljZXMJOg9AeWFkaXNfdXJsIipodHRwczovL3d3dy5nb29n
+bGUuY29tL2FjY291bnRzL284L2lkOg1AY3VycmVudEAHOg5Ac2VydmljZXNb
+ADoSQHN0YXJ0aW5nX3VybCIqaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hY2Nv
+dW50cy9vOC9pZA==--07d45db8e5d8ca19cec2927e2f1ad3a6468ea992
+  Parameters: {"google_email_extension"=>"on", "action"=>"start", "controller"=>"consumer", "openid_identifier"=>"https://www.google.com/accounts/o8/id"}
+  [4;36;1mSQL (0.000260)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to https://www.google.com/accounts/o8/ud?openid.assoc_handle=AOQobUepCh1SzPFi-i8xnAZxDmpXPfi9tOiBEtVb--ZVorwE4WeSZhnb&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ext1.mode=fetch_request&openid.ext1.required=email&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.realm=http%3A%2F%2Fwww.example.com%2Fconsumer&openid.return_to=http%3A%2F%2Fwww.example.com%2Fconsumer%2Fcomplete
+Completed in 0.44294 (2 reqs/sec) | DB: 0.00026 (0%) | 302 Found [http://www.example.com/consumer/start?openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&google_email_extension=on]
+
+
+Processing ConsumerController#complete (for 127.0.0.1 at 2008-11-12 16:59:02) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ACIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1
+ZXN0ZWRfZW5kcG9pbnRvOiJPcGVuSUQ6Ok9wZW5JRFNlcnZpY2VFbmRwb2lu
+dAw6GEBkaXNwbGF5X2lkZW50aWZpZXIwOg9AdHlwZV91cmlzWwYiLGh0dHA6
+Ly9zcGVjcy5vcGVuaWQubmV0L2F1dGgvMi4wL3NlcnZlcjoQQHVzZWRfeWFk
+aXNUOhBAc2VydmVyX3VybCIqaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hY2Nv
+dW50cy9vOC91ZDoSQGNhbm9uaWNhbF9pZDA6EEBjbGFpbWVkX2lkMDoOQGxv
+Y2FsX2lkMCI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2Vz
+OjpPcGVuSUQ6OkNvbnN1bWVyOjpvOilPcGVuSUQ6OkNvbnN1bWVyOjpEaXNj
+b3ZlcmVkU2VydmljZXMJOg1AY3VycmVudEAKOg9AeWFkaXNfdXJsIipodHRw
+czovL3d3dy5nb29nbGUuY29tL2FjY291bnRzL284L2lkOg5Ac2VydmljZXNb
+ADoSQHN0YXJ0aW5nX3VybCIqaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hY2Nv
+dW50cy9vOC9pZA==--138e0b7cd1eddf7c1506099c4548a9edfdfb5b40
+  Parameters: {"openid.claimed_id"=>"https://www.google.com/accounts/o8/id?id=AItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc", "openid.sig"=>"b8imeZ75y5+JPyCa4UiU3i0Rx08=", "openid.return_to"=>"http://www.example.com/consumer/complete", "openid.mode"=>"id_res", "openid.ext1.mode"=>"fetch_response", "openid.op_endpoint"=>"https://www.google.com/accounts/o8/ud", "openid.ns"=>"http://specs.openid.net/auth/2.0", "openid.response_nonce"=>"2008-11-13T00:59:02ZtQJaj66dlsBHpw", "action"=>"complete", "controller"=>"consumer", "openid.ext1.type.email"=>"http://axschema.org/contact/email", "openid.identity"=>"https://www.google.com/accounts/o8/id?id=AItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc", "openid.ns.ext1"=>"http://openid.net/srv/ax/1.0", "openid.signed"=>"op_endpoint,claimed_id,identity,return_to,response_nonce,assoc_handle,ext1.mode,ext1.type.email,ext1.value.email", "openid.assoc_handle"=>"AOQobUepCh1SzPFi-i8xnAZxDmpXPfi9tOiBEtVb--ZVorwE4WeSZhnb", "openid.ext1.value.email"=>"brian.moran@gmail.com"}
+Redirected to http://www.example.com/consumer
+Completed in 0.40053 (2 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/consumer/complete?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2008-11-13T00%3A59%3A02ZtQJaj66dlsBHpw&openid.return_to=http%3A%2F%2Fwww.example.com%2Fconsumer%2Fcomplete&openid.assoc_handle=AOQobUepCh1SzPFi-i8xnAZxDmpXPfi9tOiBEtVb--ZVorwE4WeSZhnb&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cext1.mode%2Cext1.type.email%2Cext1.value.email&openid.sig=b8imeZ75y5%2BJPyCa4UiU3i0Rx08%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=brian.moran%40gmail.com]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-12 16:59:03) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hI
+YXNoewY6DHN1Y2Nlc3MiAZtWZXJpZmljYXRpb24gb2YgaHR0cHM6Ly93d3cu
+Z29vZ2xlLmNvbS9hY2NvdW50cy9vOC9pZD9pZD1BSXRPYXdrU3QzUEZiZjB6
+cnBuZ1ZSUkR4d1VsbVFCQnZCUmNkS2Mgc3VjY2VlZGVkLiBFbWFpbCBhZGRy
+ZXNzIHByb3ZpZGVkIGlzIGJyaWFuLm1vcmFuQGdtYWlsLmNvbQY6CkB1c2Vk
+ewY7BkYiPU9wZW5JRDo6Q29uc3VtZXI6OkRpc2NvdmVyZWRTZXJ2aWNlczo6
+T3BlbklEOjpDb25zdW1lcjo6MA==--df3e2171c5708e6e7f93496759e202f0aa7480be
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00489 (204 reqs/sec) | Rendering: 0.00309 (63%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/consumer]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-12 17:00:36) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgxzdWNjZXNzIgGbVmVyaWZpY2F0aW9uIG9mIGh0dHBzOi8vd3d3
+Lmdvb2dsZS5jb20vYWNjb3VudHMvbzgvaWQ/aWQ9QUl0T2F3a1N0M1BGYmYw
+enJwbmdWUlJEeHdVbG1RQkJ2QlJjZEtjIHN1Y2NlZWRlZC4gRW1haWwgYWRk
+cmVzcyBwcm92aWRlZCBpcyBicmlhbi5tb3JhbkBnbWFpbC5jb20GOgpAdXNl
+ZHsGOwZUIi5PcGVuSUQ6OkNvbnN1bWVyOjpsYXN0X3JlcXVlc3RlZF9lbmRw
+b2ludDAiPU9wZW5JRDo6Q29uc3VtZXI6OkRpc2NvdmVyZWRTZXJ2aWNlczo6
+T3BlbklEOjpDb25zdW1lcjo6MA==--9cafd79ce57b00731b170a2491c5c8a2466c6c83
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+  [4;36;1mSQL (0.000241)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering consumer/index
+Completed in 0.04903 (20 reqs/sec) | Rendering: 0.04722 (96%) | DB: 0.00024 (0%) | 200 OK [http://www.example.com/consumer]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-12 17:00:48) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hI
+YXNoewAGOgpAdXNlZHsAIj1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVk
+U2VydmljZXM6Ok9wZW5JRDo6Q29uc3VtZXI6OjA=--0d21fcaa65983c867a2d039a63f883c9ba8d93c9
+  Parameters: {"google_email_extension"=>"on", "action"=>"start", "controller"=>"consumer", "openid_identifier"=>"https://www.google.com/accounts/o8/ud"}
+Redirected to http://www.example.com/consumer
+Completed in 0.53052 (1 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/consumer/start?openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&google_email_extension=on]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-12 17:00:48) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgplcnJvciIBr0Rpc2NvdmVyeSBmYWlsZWQgZm9yIGh0dHBzOi8v
+d3d3Lmdvb2dsZS5jb20vYWNjb3VudHMvbzgvdWQ6IEhUVFAgUmVzcG9uc2Ug
+c3RhdHVzIGZyb20gaWRlbnRpdHkgVVJMIGhvc3QgaXMgbm90ICIyMDAiLkdv
+dCBzdGF0dXMgIjQwMCIgZm9yIGh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vYWNj
+b3VudHMvbzgvdWQGOgpAdXNlZHsGOwZGIi5PcGVuSUQ6OkNvbnN1bWVyOjps
+YXN0X3JlcXVlc3RlZF9lbmRwb2ludDAiPU9wZW5JRDo6Q29uc3VtZXI6OkRp
+c2NvdmVyZWRTZXJ2aWNlczo6T3BlbklEOjpDb25zdW1lcjo6MA==--de4c8f50ffc777aaeef282e790b1bebb1cb7a8e5
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00198 (506 reqs/sec) | Rendering: 0.00051 (25%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/consumer]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-12 17:01:23) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hI
+YXNoewY6CmVycm9yIgGvRGlzY292ZXJ5IGZhaWxlZCBmb3IgaHR0cHM6Ly93
+d3cuZ29vZ2xlLmNvbS9hY2NvdW50cy9vOC91ZDogSFRUUCBSZXNwb25zZSBz
+dGF0dXMgZnJvbSBpZGVudGl0eSBVUkwgaG9zdCBpcyBub3QgIjIwMCIuR290
+IHN0YXR1cyAiNDAwIiBmb3IgaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hY2Nv
+dW50cy9vOC91ZAY6CkB1c2VkewY7BlQiPU9wZW5JRDo6Q29uc3VtZXI6OkRp
+c2NvdmVyZWRTZXJ2aWNlczo6T3BlbklEOjpDb25zdW1lcjo6MA==--7b2ee935a5cd7e88a59fee25abdf9e7aac5c015a
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+  [4;36;1mSQL (0.000242)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering consumer/index
+Completed in 0.05940 (16 reqs/sec) | Rendering: 0.05766 (97%) | DB: 0.00024 (0%) | 200 OK [http://www.example.com/consumer]
+
+
+Processing ConsumerController#start (for 127.0.0.1 at 2008-11-12 17:01:40) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ACIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1
+ZXN0ZWRfZW5kcG9pbnQwIj1PcGVuSUQ6OkNvbnN1bWVyOjpEaXNjb3ZlcmVk
+U2VydmljZXM6Ok9wZW5JRDo6Q29uc3VtZXI6OjA=--0d02cde9fd67239191c2222f2550e32eb303842a
+  Parameters: {"google_email_extension"=>"on", "action"=>"start", "controller"=>"consumer", "use_sreg"=>"on", "openid_identifier"=>"https://www.google.com/accounts/o8/id"}
+Redirected to https://www.google.com/accounts/o8/ud?openid.assoc_handle=AOQobUepCh1SzPFi-i8xnAZxDmpXPfi9tOiBEtVb--ZVorwE4WeSZhnb&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ext1.mode=fetch_request&openid.ext1.required=email&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=http%3A%2F%2Fwww.example.com%2Fconsumer&openid.return_to=http%3A%2F%2Fwww.example.com%2Fconsumer%2Fcomplete%3Fdid_sreg%3Dy&openid.sreg.optional=dob%2Cfullname&openid.sreg.required=email%2Cnickname
+Completed in 0.39919 (2 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/consumer/start?openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&use_sreg=on&google_email_extension=on]
+
+
+Processing ConsumerController#complete (for 127.0.0.1 at 2008-11-12 17:01:45) [GET]
+  Session ID: BAh7CCIuT3BlbklEOjpDb25zdW1lcjo6bGFzdF9yZXF1ZXN0ZWRfZW5kcG9p
+bnRvOiJPcGVuSUQ6Ok9wZW5JRFNlcnZpY2VFbmRwb2ludAw6GEBkaXNwbGF5
+X2lkZW50aWZpZXIwOg9AdHlwZV91cmlzWwYiLGh0dHA6Ly9zcGVjcy5vcGVu
+aWQubmV0L2F1dGgvMi4wL3NlcnZlcjoQQHVzZWRfeWFkaXNUOhBAc2VydmVy
+X3VybCIqaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hY2NvdW50cy9vOC91ZDoS
+QGNhbm9uaWNhbF9pZDA6EEBjbGFpbWVkX2lkMDoOQGxvY2FsX2lkMCIKZmxh
+c2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoK
+QHVzZWR7ACI9T3BlbklEOjpDb25zdW1lcjo6RGlzY292ZXJlZFNlcnZpY2Vz
+OjpPcGVuSUQ6OkNvbnN1bWVyOjpvOilPcGVuSUQ6OkNvbnN1bWVyOjpEaXNj
+b3ZlcmVkU2VydmljZXMJOg1AY3VycmVudEAHOg9AeWFkaXNfdXJsIipodHRw
+czovL3d3dy5nb29nbGUuY29tL2FjY291bnRzL284L2lkOg5Ac2VydmljZXNb
+ADoSQHN0YXJ0aW5nX3VybCIqaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hY2Nv
+dW50cy9vOC9pZA==--e3a77de13fc2404f9854a58e1ad47bfbc9469d38
+  Parameters: {"openid.claimed_id"=>"https://www.google.com/accounts/o8/id?id=AItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc", "openid.sig"=>"ZKH2b0VEGm4CcUJRJdVvOaMRnpQ=", "openid.return_to"=>"http://www.example.com/consumer/complete?did_sreg=y", "openid.mode"=>"id_res", "openid.ext1.mode"=>"fetch_response", "openid.op_endpoint"=>"https://www.google.com/accounts/o8/ud", "openid.ns"=>"http://specs.openid.net/auth/2.0", "openid.response_nonce"=>"2008-11-13T01:01:44ZUjzW4GzEJO4DHA", "action"=>"complete", "did_sreg"=>"y", "controller"=>"consumer", "openid.ext1.type.email"=>"http://axschema.org/contact/email", "openid.identity"=>"https://www.google.com/accounts/o8/id?id=AItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc", "openid.ns.ext1"=>"http://openid.net/srv/ax/1.0", "openid.signed"=>"op_endpoint,claimed_id,identity,return_to,response_nonce,assoc_handle,ext1.mode,ext1.type.email,ext1.value.email", "openid.assoc_handle"=>"AOQobUepCh1SzPFi-i8xnAZxDmpXPfi9tOiBEtVb--ZVorwE4WeSZhnb", "openid.ext1.value.email"=>"brian.moran@gmail.com"}
+Redirected to http://www.example.com/consumer
+Completed in 0.43549 (2 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/consumer/complete?did_sreg=y&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2008-11-13T01%3A01%3A44ZUjzW4GzEJO4DHA&openid.return_to=http%3A%2F%2Fwww.example.com%2Fconsumer%2Fcomplete%3Fdid_sreg%3Dy&openid.assoc_handle=AOQobUepCh1SzPFi-i8xnAZxDmpXPfi9tOiBEtVb--ZVorwE4WeSZhnb&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cext1.mode%2Cext1.type.email%2Cext1.value.email&openid.sig=ZKH2b0VEGm4CcUJRJdVvOaMRnpQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkSt3PFbf0zrpngVRRDxwUlmQBBvBRcdKc&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=brian.moran%40gmail.com]
+
+
+Processing ConsumerController#index (for 127.0.0.1 at 2008-11-12 17:01:45) [GET]
+  Session ID: BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsHOgxzdWNjZXNzIgGbVmVyaWZpY2F0aW9uIG9mIGh0dHBzOi8vd3d3
+Lmdvb2dsZS5jb20vYWNjb3VudHMvbzgvaWQ/aWQ9QUl0T2F3a1N0M1BGYmYw
+enJwbmdWUlJEeHdVbG1RQkJ2QlJjZEtjIHN1Y2NlZWRlZC4gRW1haWwgYWRk
+cmVzcyBwcm92aWRlZCBpcyBicmlhbi5tb3JhbkBnbWFpbC5jb206EXNyZWdf
+cmVzdWx0cyJDU2ltcGxlIFJlZ2lzdHJhdGlvbiBkYXRhIHdhcyByZXF1ZXN0
+ZWQsIGJ1dCBub25lIHdhcyByZXR1cm5lZC4GOgpAdXNlZHsHOwZGOwdGIi5P
+cGVuSUQ6OkNvbnN1bWVyOjpsYXN0X3JlcXVlc3RlZF9lbmRwb2ludDAiPU9w
+ZW5JRDo6Q29uc3VtZXI6OkRpc2NvdmVyZWRTZXJ2aWNlczo6T3BlbklEOjpD
+b25zdW1lcjo6MA==--51c0ea26d31db8c6c05136db1b952f14582ae625
+  Parameters: {"action"=>"index", "controller"=>"consumer"}
+Rendering consumer/index
+Completed in 0.00211 (474 reqs/sec) | Rendering: 0.00054 (25%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/consumer]

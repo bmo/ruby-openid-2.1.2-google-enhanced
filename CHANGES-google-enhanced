@@ -1,0 +1,2 @@
+# Added code to consumer example to request and retrieve gmail addresses if Google is used as the OpenID provider.
+# bmoran@onehub.com
